@@ -172,6 +172,7 @@ iframe {
     width: 100%;
     max-width: 600px;
     height: auto;
+    margin: 0 auto;
 }
 
 .imagem-carreira img {
@@ -184,15 +185,33 @@ iframe {
 .texto-carreira {
     position: absolute;
     bottom: 10px;
-    left: 20px;
-    right: 20px;
+    left: 10px;
+    right: auto;
     color: white;
     font-size: 16px;
     font-weight: bold;
     line-height: 1.5;
     text-align: left;
     font-family: 'Poppins', sans-serif;
-    padding: 0 10px;
+    padding: 10px;
+    width: 90%;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .imagem-carreira {
+        max-width: 100%;
+    }
+
+    .texto-carreira {
+        bottom: 10px;
+        left: 10px;
+        right: 10px;
+        font-size: 14px;
+        width: auto;
+        padding: 5px;
+        background: rgba(0, 0, 0, 0.5);
+    }
 }
 
 .redes-sociais img {
